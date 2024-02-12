@@ -4,11 +4,11 @@ namespace Syntax
     {
         static void Main(string[] args)
         {
-            Order order = new Order(1, "Alan Kay", DateTime.Now);
-            Order order2 = new Order(2, "Ted Nelson", DateTime.Now.AddDays(1));
+            Book book = new Book("Donald E. Knuth", "Literate Programming", 384);
+            book.DisplayBook();
 
-            order.DisplayOrder();
-            order2.DisplayOrder();
+            Book book2 = new Book("Cixin Liu", "The Three-Body Problem", 400);
+            book2.DisplayBook();
         }
     }
 }
