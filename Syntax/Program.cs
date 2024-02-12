@@ -8,6 +8,7 @@ namespace Syntax
             Order order2 = new Order(2, "Ted Nelson", DateTime.Now.AddDays(1));
 
             order.DisplayOrder();
+            order2.DisplayOrder();
         }
     }
 }
