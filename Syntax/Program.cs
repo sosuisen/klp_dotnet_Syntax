@@ -1,30 +1,13 @@
-Console.Write("Enter the first number: ");
-double num1 = Convert.ToDouble(Console.ReadLine());
-
-Console.Write("Enter the second number: ");
-double num2 = Convert.ToDouble(Console.ReadLine());
-
-Console.Write("Enter an operator (+, -, *, /): ");
-string? op = Console.ReadLine();
-
-double result = 0;
-
-switch (op)
+namespace ClassPractice
 {
-    case "+":
-        result = num1 + num2;
-        break;
-    case "-":
-        result = num1 - num2;
-        break;
-    case "*":
-        result = num1 * num2;
-        break;
-    case "/":
-        result = num1 / num2;
-        break;
-    default:
-        Console.WriteLine("Invalid operator.");
-        return;
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            DateTime date = new DateTime(2023, 12, 31);
+            Console.WriteLine(date);
+            date = date.AddDays(1);
+            Console.WriteLine(date);
+        }
+    }
 }
-Console.WriteLine("Result: " + result);
