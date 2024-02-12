@@ -1,4 +1,4 @@
-namespace ClassPractice
+namespace Syntax
 {
     internal class Program
     {
