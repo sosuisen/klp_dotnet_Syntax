@@ -4,10 +4,10 @@ namespace Syntax
     {
         static void Main(string[] args)
         {
-            DateTime date = new DateTime(2023, 12, 31);
-            Console.WriteLine(date);
-            date = date.AddDays(1);
-            Console.WriteLine(date);
+            Order order = new Order(1, "Alan Kay", DateTime.Now);
+            Order order2 = new Order(2, "Ted Nelson", DateTime.Now.AddDays(1));
+
+            order.DisplayOrder();
         }
     }
 }
