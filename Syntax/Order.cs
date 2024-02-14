@@ -3,14 +3,15 @@ namespace Syntax
     internal class Order
     {
         private int orderId;
-        private string customerName;
-        private DateTime orderDate;
+        private int _orderId;
+        private string _customerName;
+        private DateTime _orderDate;
 
         public Order(int orderId, string customerName, DateTime orderDate)
         {
-            this.orderId = orderId;
-            this.customerName = customerName;
-            this.orderDate = orderDate;
+            _orderId = orderId;
+            _customerName = customerName;
+            _orderDate = orderDate;
         }
 
         public void DisplayOrder()
