@@ -2,15 +2,15 @@ namespace Syntax
 {
     internal class Book
     {
-        private string author;
-        private string title;
-        private int pages;
+        private string _author;
+        private string _title;
+        private int _pages;
 
         public Book(string author, string title, int pages)
         {
-            this.author = author;
-            this.title = title;
-            this.pages = pages;
+            _author = author;
+            _title = title;
+            _pages = pages;
         }
     }
 }
